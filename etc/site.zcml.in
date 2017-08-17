@@ -1,0 +1,22 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           i18n_domain="schulportal">
+
+  <include package="uvcsite" />
+  <includePlugins package="uvcsite" />
+  <includePluginsOverrides package="uvcsite" /> 
+
+    <configure i18n_domain="schulportal">
+      <principal id="zope.manager"
+                 title="Manager"
+                 login="admin"
+                 password_manager="SSHA"
+                 password="{SSHA}rrs1xAdSGqPST-gAz7uBjj9PjYDgJgeq"
+                 />
+
+      <role id="zope.Manager" title="Site Manager" />
+      <role id="zope.Member" title="Site Member" />
+      <grantAll role="zope.Manager" />
+      <grant role="zope.Manager"
+             principal="zope.manager" />
+   </configure>
+</configure>

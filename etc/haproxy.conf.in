@@ -46,7 +46,7 @@ balance roundrobin
 # Use / (the default) for periodic backend health checks
 option httpchk GET /app
 
-http-check expect status 404
+#http-check expect status 404
 
 
 # Server options:
@@ -54,6 +54,7 @@ http-check expect status 404
 # "maxconn" is how many connections can be sent to the server at once
 # "check" enables health checks
 # "rise 1" means consider Zope up after 1 successful health check
-server grok1 ${settings:host}:${settings:port} cookie g1 check maxconn 2 rise 1
+server grok1 ${settings:host}:${settings:port} cookie g1 check maxconn 4 rise 1
+server grok2 10.64.54.11:7787 cookie g2 check maxconn 4 rise 1
 
 

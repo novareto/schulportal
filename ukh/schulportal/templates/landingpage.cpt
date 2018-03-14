@@ -1,0 +1,206 @@
+<div id="landingpage" class="row" tal:define="items view.getItems()">
+<h1>Willkommen im internen Bereich</h1>
+
+
+
+
+
+  <div class="row col-md-8">
+
+
+
+
+    <div class="row ">
+      <br>
+    </div>
+
+
+
+    <div tal:condition="'KinderUnfallanzeige' in items.keys() or 'ErsteHilfe' in items.keys()">
+      <div class="row ">
+
+
+        <div class="col-md-4" tal:condition="item" tal:define="item items.get('KinderUnfallanzeige')">
+          <a href="" tal:attributes="href string:${view.application_url()}/selectuaz">
+            <img class="img-responsive" src="" tal:attributes="src 'fanstatic/ukh.schulportal/UKH_Piktos_Mitgliederportal.svg'" />
+            <h3><center>Unfall melden</center></h3>
+          </a>
+        </div>
+        <div class="col-md-4" tal:condition="item" tal:define="item items.get('KinderUnfallanzeige')">
+          <a href="" tal:attributes="href view.getHomeFolder() + '/Sunfallanzeigen/addverbandbuch'">
+            <img class="img-responsive" src="" tal:attributes="src 'fanstatic/ukh.schulportal/UKH_Piktos_Eintrag-Verbandbuch.svg'" />
+            <h3><center>Eintrag ins Verbandbuch</center></h3>
+          </a>
+        </div>
+        <div class="col-md-4" tal:condition="item" tal:define="item items.get('ErsteHilfe')">
+          <a href="" tal:attributes="href view.getHomeFolder() + '/Erstehilfe'">
+            <img class="img-responsive" src="" tal:attributes="src 'fanstatic/ukh.schulportal/UKH_Piktos_Erste-Hilfe-Kontingent.svg'" />
+            <h3><center>Erste-Hilfe-Kontingent</center></h3>
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="row ">
+      <br>
+    </div>
+
+    <div class="row ">
+      <div class="col-md-4">
+        <a target="_blank" href="/fanstatic/ukh.schulportal/Taxi-Gutscheinverfahren.pdf">
+          <img class="img-responsive" src="" tal:attributes="src 'fanstatic/ukh.schulportal/UKH_Piktos_Taxi-Gutschein.svg'" />
+          <h3><center>Taxi-Gutschein</center></h3>
+        </a>
+      </div>
+
+
+
+      <div tal:condition="'HessGis' in items.keys()">
+        <div class="col-md-4" tal:condition="item" tal:define="item items.get('HessGis')">
+          <a tal:attributes="href view.getHomeFolder() + '/Hessgis'" >
+            <img class="img-responsive" src="" tal:attributes="src 'fanstatic/ukh.schulportal/UKH_Piktos_HessGISS.svg'" />
+            <h3><center>HessGISS</center></h3>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <a target="_blank" href="/fanstatic/ukh.schulportal/Taxi-Gutscheinverfahren.pdf">
+          <img class="img-responsive" src="" tal:attributes="src 'fanstatic/ukh.schulportal/UKH_Piktos_Erklaerfilm_Mitgliederportal.svg'" />
+          <h3><center>Interner Bereich - kurz erklärt!</center></h3>
+        </a>
+      </div>
+
+
+
+
+
+    </div>
+
+
+    <div class="row ">
+      <br>
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+
+
+    <!--
+
+    <div class="row ">
+      <br>
+    </div>
+    <div tal:condition="'nachrichten' in items.keys() or 'ErsteHilfe' in items.keys()"> 
+      <div class="row ">
+        <div class="col-md-6" tal:condition="item" tal:define="item items.get('nachrichten')">
+          <a href="" tal:attributes="href view.getHomeFolder() + '/Letterbasket/add'">
+            <img class="img-responsive" src="" tal:attributes="src 'fanstatic/ukh.schulportal/postkorb_gruen.png'" />
+          </a>
+        </div>
+        <div class="col-md-6" tal:condition="item" tal:define="item items.get('ErsteHilfe')">
+          <a href="" tal:attributes="href view.getHomeFolder() + '/Erstehilfe'">
+            <img class="img-responsive" src="" tal:attributes="src 'fanstatic/ukh.schulportal/erstehilfe_gruen.png'" />
+          </a>
+        </div>
+      </div>
+
+
+
+
+
+
+
+    <div class="row ">
+      <br>
+    </div>
+    <div class="row ">
+      <div class="col-md-6">
+        <a tal:attributes="href view.getHomeFolder() + '/taxigutscheine'" >
+          <img class="img-responsive" src="" tal:attributes="src 'fanstatic/ukh.schulportal/taxigutschein.png'" />
+        </a>
+      </div>
+      <div tal:condition="'HessGis' in items.keys()">
+        <div class="col-md-6" tal:condition="item" tal:define="item items.get('HessGis')">
+          <a tal:attributes="href view.getHomeFolder() + '/Hessgis'" >
+            <img class="img-responsive" src="" tal:attributes="src 'fanstatic/ukh.schulportal/hessgis_gruen.png'" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    -->
+
+    <!-- Original !!!
+
+    <div tal:condition="'HessGis' in items.keys()">
+      <div class="row ">
+        <div class="col-md-6" tal:condition="item" tal:define="item items.get('HessGis')">
+          <a tal:attributes="href view.getHomeFolder() + '/Hessgis'" >
+            <img class="img-responsive" src="" tal:attributes="src 'fanstatic/ukh.schulportal/hessgis_gruen.png'" />
+          </a>
+        </div>
+      </div>
+    </div>
+    -->
+
+
+
+
+
+
+  <div class="col-md-4 hidden-xs">
+    <div class="portlet">
+        <div class="portlet-header"></div>
+        <h1>Häufig gestellte Fragen (FAQ)</h1>
+        <br>
+        <div class="portlet-body">
+          <a class="portletlink"
+                 href="" tal:attributes="href view.application_url() + '/faq01'">
+                <p>- Erläuterungen zur Unfallanzeige</p>
+          </a>
+          <a class="portletlink"
+                 href="" tal:attributes="href view.application_url() + '/faq02'">
+                <p>- Wofür brauche ich das Verbandbuch?</p>
+          </a>
+          <a class="portletlink"
+                 href="" tal:attributes="href view.application_url() + '/faq03'">
+                <p>- Erläuterung zum Erste-Hilfe-Verfahren</p>
+          </a>
+          <a class="portletlink"
+                 href="" tal:attributes="href view.application_url() + '/faq04'">
+                <p>- Wer braucht HessGISS?</p>
+          </a>
+          <a class="portletlink"
+                href="http://www.dguv.de/landesverbaende/de/datenbanken/index.jsp" target="_blank">
+                <p>- Liste der Durchgangsärzte</p>
+          </a>
+        </div>
+        <div class="portlet-footer"></div>
+    </div>
+  </div>
+
+
+
+
+    <div class="row ">
+      <div class="col-md-12">
+        <p>
+          Fragen zur technischen Bedienung der Schulportal-Anwendungen?
+          Bitte wenden Sie sich an <a href="mailto:techniksupport@ukh.de"> techniksupport@ukh.de </a>
+        </p>
+      </div>
+    </div>
+
+
+
+
+</div>

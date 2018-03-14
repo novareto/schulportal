@@ -1,0 +1,13 @@
+<div tal:attributes="id viewlet.id" class="collapse navbar-collapse navbar-nav-collapse">
+  <ul id="main-nav" class="nav  navbar-nav">
+    <tal:menus repeat="menuitem viewlet.smenus">
+	<li tal:attributes="class python: menuitem['selected'] and 'active' or ''">
+	  <a tal:attributes="href menuitem.action"
+	     tal:content="structure menuitem.title" />
+	</li>
+    </tal:menus>
+    </ul>
+    <tal:loop repeat="menu viewlet.renderables">
+      <span tal:replace="structure menu.render()"> </span>
+    </tal:loop>
+</div>

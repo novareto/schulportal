@@ -1,0 +1,19 @@
+<h1 tal:content="view.title"> </h1>
+<p class="lead" tal:content="view.description"> </p>
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div tal:repeat="faq view.items" class="panel panel-default">
+    <div tal:attributes="id string:heading${faq.order}" class="panel-heading" role="tab">
+      <h4 class="panel-title">
+        <a tal:attributes="href string:#collapse${faq.order}; aria-controls string:heading${faq.order}" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" class="collapsed">
+          <span tal:replace="faq.question"/>
+        </a>
+      </h4>
+    </div>
+    <div tal:attributes="id string:collapse${faq.order}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+         <span tal:replace="structure faq.answer"/>
+      </div>
+    </div>
+  </div>
+</div>

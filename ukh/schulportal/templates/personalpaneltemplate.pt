@@ -1,0 +1,6 @@
+<div>
+  <h1 tal:content="view/title | nothing"></h1>
+  <p> Legen Sie hier einen Mitbenutzer an und vergeben
+  Sie die jeweiligen Berechtigungen.</p>
+  <span tal:replace="structure provider:personalmenu"/>
+</div>

@@ -1,0 +1,40 @@
+<h1>Taxi-Gutschein</h1>
+<h2>Informationen für Schulen</h2>
+
+<form class="form-horizontal" enctype="multipart/form-data" method="post" novalidate="novalidate" action="" tal:attributes="action request.URL">
+
+<p>Mit dem Taxi-Gutscheinverfahren wird die Beförderung leicht verletzter Kinder zum Arzt oder in ein Krankenhaus vereinfacht.</p>
+<p>Bei schwereren Verletzungen und auch in Zweifelsfällen können und müssen natürlich weiterhin die Rettungsdienste gerufen werden.</p>
+<p>Bitte wenden Sie das Verfahren nur an, wenn Kinder und Jugendliche leichte Verletzungen erlitten haben, die als solche auch von Ersthelfer*innen erkennbar sind.</p>
+<p>Dazu gehören z.B.</p>
+<br/>
+<ul>
+  <li>kleine Schürfwunden,</li>
+  <li>Splitter unter der Haut,</li>
+  <li>kleine Schnittwunden,</li>
+  <li>leichte Prellungen an Armen oder Händen.</li>
+</ul>
+<br/>
+<p>Ist das Kind nur leicht verletzt, füllen Sie einen Taxi-Gutschein aus und drucken ihn aus. Mit diesem Gutschein erteilen Sie dem Taxiunternehmen den Auftrag,</p>
+<p>die Fahrt zum nächstgelegenen Arzt bzw. Krankenhaus zu übernehmen.</p>
+<br/>
+<p>Die zweite Seite des Dokuments ist ein Merkblatt für den beauftragten Taxifahrer. Es enthält wichtige Hinweise zur Beförderung und Betreuung des</p>
+<p>verletzten Kindes und zur Abrechnung der Beförderungskosten. Sie brauchen keine Kosten vorzulegen. Um eine ärztliche Notwendigkeitsbescheinigung</p>
+<p>für die Beförderung brauchen Sie sich ebenfalls nicht zu kümmern. Sollte es dennoch Schwierigkeiten geben, rufen Sie uns bitte an.</p>
+<h2>Und noch ein Wort zur Haftung:</h2>
+<p>Weder Ersthelfer*in, noch Lehrkraft oder Erzieher*in wird für eine möglicherweise unangemessene Wahl des Beförderungsmittels zur Rechenschaft gezogen!</p>
+<p>Handeln Sie bitte aufgrund Ihrer Einschätzung und Ihrer Erfahrung und schalten Sie ggf. zur Beurteilung auch den Schulsanitätsdienst ein!</p>
+<h2>In der Praxis:</h2>
+<p>Im Falle eines Falles rufen Sie das zuständige Taxiunternehmen an. Übergeben Sie den ausgefüllten Taxi-Gutschein und erteilen somit dem Taxifahrer</p>
+<p>den Fahrtauftrag zum nächstgelegenen Arzt. Übergeben Sie dem Taxifahrer außerdem das Merkblatt mit den Hinweisen zur Beförderung und Betreuung des</p>
+<p>verletzten Kindes.</p>
+<br/>
+<p>Die Abrechnung der Beförderungskosten regelt zentral in unserem Auftrag die Taxi Frankfurt eG., Heidelberger Str. 25, 60327 Frankfurt am Main,</p>
+<p>Telefon: 069 252025.</p>
+<br/>
+<p>Für Fragen stehen wir Ihnen gerne zur Verfügung.</p>
+<p>Ihre Unfallkasse Hessen</p>
+<br/>
+<p><b>Unfallkasse Hessen</b> | Leonardo-da-Vinci-Allee 20 | 60486 Frankfurt am Main | Servicetelefon: 069 29972-440 | E-Mail: ukh@ukh.de</p>
+<div metal:use-macro="path: context/@@fieldmacros/template/macros/form-actions"></div>
+</form>

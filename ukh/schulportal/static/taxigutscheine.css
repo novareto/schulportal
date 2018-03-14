@@ -1,0 +1,19 @@
+/* Unterschiedliche Feldlaengen */
+
+#form-field-zielfahrt
+    {
+    width: 427px;
+    }
+
+#form-field-nname,
+#form-field-vname
+    {
+    width: 250px;
+    }
+
+#form-field-geburtsdatum,
+#form-field-unfalltag,
+#form-field-tagfahrt
+    {
+    width: 150px;
+    }

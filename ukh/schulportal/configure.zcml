@@ -1,0 +1,11 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           xmlns:grok="http://namespaces.zope.org/grok">
+  <include package="grok" />
+  <include package="ukhtheme.grok" />
+  <include package="uvc.cache" />
+  <include package="zope.app.locales" />
+  <grok:grok package="." />
+  <browser:defaultSkin name="ukh_schulportaltheme" />
+</configure>
+

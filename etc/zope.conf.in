@@ -60,6 +60,6 @@ ${zope_conf:extra}
 <product-config database>
      dsn ${settings:dsn}
      user_table ${settings:user_table}
-     enr_table ${settings:trg_table}
+     enr_table ${settings:enr_table}
      trg_table ${settings:trg_table}
 </product-config>

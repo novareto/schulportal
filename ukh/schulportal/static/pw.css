@@ -1,7 +1,0 @@
-/* Unterschiedliche Feldlaengen */
-
-#form-field-passwort,
-#form-field-confirm
-    {
-    width: 200px;
-    }

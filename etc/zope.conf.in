@@ -63,3 +63,7 @@ ${zope_conf:extra}
      enr_table ${settings:enr_table}
      trg_table ${settings:trg_table}
 </product-config>
+<product-config keys>
+     privkey ${settings:privkey}
+     pubkey ${settings:pubkey}
+</product-config>
